@@ -13,7 +13,7 @@ export default function Home() {
   const [users, setUsers] = useState(false);
 
   const verify = async (uid) => {
-    console.log("result verify ");
+    console.log("result verify 66666666");
     const res = await fetch("/api/liff-api/index.php/users/verify/" + uid, {
       headers: {
         "Content-Type": "application/json",
@@ -38,10 +38,9 @@ export default function Home() {
       const verifyData = await verify(profile.userId);
 
       if (verifyData.status === "success") {
-        setUsers(verifyData.data);
-      
+        setUsers(verifyData.data);      
       }
-      
+
     };
 
     fetchData();
