@@ -14,7 +14,7 @@ export default function Home() {
 
   const verify = async (uid) => {
     console.log("result verify");
-    const res = await fetch("/api/liff-api/index.php/users/verify/" + uid, {
+    const res = await fetch("https://87ae-202-12-97-143.ngrok-free.app/api/liff-api/index.php/users/verify/" + uid, {
       headers: {
         "Content-Type": "application/json",
         "ngrok-skip-browser-warning": "69420",
