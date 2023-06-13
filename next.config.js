@@ -13,7 +13,7 @@ module.exports = {
     return [
       {
         source: "/api/:path*",
-        destination: `https://87ae-202-12-97-143.ngrok-free.app/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_API_URL}/:path*`, // Proxy to Backend
       },
     ];
   },
