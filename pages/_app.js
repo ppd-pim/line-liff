@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "../styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.css'
 
-const liffId = '1661279233-dDV4VVlZ';
+const liffId = process.env.NEXT_PUBLIC_LIFF_ID;
 
 function MyApp({ Component, pageProps }) {
   useEffect( () => {
